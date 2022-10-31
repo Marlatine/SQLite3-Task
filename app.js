@@ -16,6 +16,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const port = process.env.PORT || 8080;
 const hostname = "localhost";
 
+// NEED TO USE POSTMAN!!
+
 const CREATE_PETS =
   "CREATE TABLE if not exists pets (petID INTEGER PRIMARY KEY AUTOINCREMENT, petname TEXT, petage INT, ownername TEXT, species TEXT);";
 const DROP_PETS = "DROP TABLE if exists pets;";
